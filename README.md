@@ -21,8 +21,13 @@
   * `npm run build`
   * `npm run start`
 
+## Known bugs
+* Error handling not working
+
 ## Roadmap
 * Add ability to convert more currencies
+* Refactor business logic using js classes and promises, and place in separate file
+* Fix/add error handling
 * Add ability for user to select desired currency from drop-down menu
 * Add styling
 
