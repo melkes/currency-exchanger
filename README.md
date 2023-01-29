@@ -1,10 +1,8 @@
-
 # Currency Exchanger
 
 ### By Mike Wilkes
 #### An application to convert currency pairs using the [ExchangeRate API](https://www.exchangerate-api.com/)
 ---
-
 ## Technologies Used
 * Git
 * HTML
@@ -22,15 +20,15 @@
   * `npm run build`
   * `npm run start`
 
-## Roadmap
+## Potential improvements/roadmap
 * Allow for conversion both to and from USD
-* Cache API results and use session storage for new conversions
 * UI improvements:
-    * Allow user selection to persist after form submission
+    * Allow user's inputed number to persist after form submission for easier conversion to other currencies
     * Shorten converted amounts to two decimals
-    * Use the symbol for the converted currency
-    * Add comma separators to results to make large numbers easier to read. Or, convert larger number into millions, billions, or both (e.g., “$1,000 is equal to ₩1.2 million”)
+    * Use the appropriate symbol for the converted currency
+    * Add comma separators to results to make large numbers easier to read. Or, convert larger number into rounded millions/billions, or both (e.g., “$1,000 is equal to ¥1.3 million”)
 * Additional design and styling improvements
+* Cache API results and use session storage for new conversions
 
 ## License
 ---
