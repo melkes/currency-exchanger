@@ -1,8 +1,28 @@
-/* .background-pic{
-  background-image: url('https://images.unsplash.com/photo-1591033594798-33227a05780d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2559&q=80');
-  background-attachment: fixed;
+body {
+  background-image: url("../img/john-mcarthur-ROQzKIAdY78-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-color: white;
   background-size: cover;
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; */
+}
+/* #content {
+  background-color: white;
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+  padding: 50px;
+  border: 1px solid gray;
+  box-sizing: border-box;
 } */
+
+.container {
+  background-color: white;
+  width: 60%;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid gray;
+  box-sizing: border-box;
+}
