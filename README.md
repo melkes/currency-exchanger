@@ -12,6 +12,7 @@
 * Javascript
 * npm
 * Webpack
+* [ExchangeRate API](https://www.exchangerate-api.com/)
 
 ## Setup/Installation Requirements
 
