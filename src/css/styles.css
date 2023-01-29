@@ -3,19 +3,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh; */
 }
-/* #content {
-  background-color: white;
-  width: 80%;
-  height: auto;
-  margin: 20px auto;
-  padding: 50px;
-  border: 1px solid gray;
-  box-sizing: border-box;
-} */
 
 .container {
   background-color: white;

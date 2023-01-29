@@ -1,23 +1,7 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-// import  from './currencies';
-
-function getRate(dollars, currencyCode) {
-  let request = new XMLHttpRequest();
-  const url = `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/pair/USD/${currencyCode}/${dollars}`;
-  request.addEventListener("loadend", function() {
-    const response = JSON.parse(this.responseText);
-    if (this.status === 200) {
-      printElements(response, dollars);
-    } else {
-      printError(this, dollars);
-    } 
-  });
-
-  request.open("GET", url, true);
-  request.send();
-}
+import Exchanger from './currencies';
 
 function printError(newXhr) {
   document.querySelector('#showResponse').innerText = `There was an error in accessing data: ${newXhr.status} ${newXhr.statusText}`;
@@ -32,7 +16,7 @@ function handleFormSubmission(event) {
   const dollars = document.querySelector('#amount').value;
   const currencyCode = document.querySelector('#currencyCode').value;
   document.querySelector('#amount').value = null;
-  getRate(dollars, currencyCode);
+  Exchanger.getRate(dollars, currencyCode, printElements, printError);
 }
 
 window.addEventListener("load", function() {
