@@ -12,7 +12,7 @@ function getRate(dollars, currencyCode) {
       printElements(response, dollars);
     } else {
       printError(this, dollars);
-    }
+    } 
   });
 
   request.open("GET", url, true);
@@ -30,9 +30,9 @@ function printElements(response, dollars) {
 function handleFormSubmission(event) {
   event.preventDefault();
   const dollars = document.querySelector('#amount').value;
-  // const currencyCode = document.querySelector('#currencyCode').value;
+  const currencyCode = document.querySelector('#currencyCode').value;
   document.querySelector('#amount').value = null;
-  getRate(dollars);
+  getRate(dollars, currencyCode);
 }
 
 window.addEventListener("load", function() {

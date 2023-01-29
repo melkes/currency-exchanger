@@ -11,6 +11,10 @@
     <form>
       <label for="amount">$</label>
       <input id="amount" type="text" name="amount">
+      <select id="currencyCode">
+        <option value="EUR">Euro</option>
+        <option value="GBP">British Pound</option>
+      </select>
       <button type="submit" class="btn-success" id="dollarAmount">Get rates</button>
     </form>
     <p id="showResponse"></p>
