@@ -4,7 +4,10 @@ import './css/styles.css';
 import Exchanger from './currencies';
 
 function printError(newXhr) {
-  document.querySelector('#showResponse').innerText = `There was an error in accessing data: ${newXhr.status} ${newXhr.statusText}`;
+  const response = JSON.parse(newXhr.response);
+  if (response.result === "error") {
+    document.querySelector('#showResponse').innerText = `There was an error in accessing data: ${response['error-type']}`;
+  }
 }
 
 function printElements(response, dollars) {
@@ -22,4 +25,3 @@ function handleFormSubmission(event) {
 window.addEventListener("load", function() {
   document.querySelector('form').addEventListener("submit", handleFormSubmission);
 });
-

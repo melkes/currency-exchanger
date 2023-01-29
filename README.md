@@ -22,15 +22,15 @@
   * `npm run build`
   * `npm run start`
 
-## Known bugs
-* Error handling not working
-
 ## Roadmap
-* Add ability to convert more currencies
-* Refactor business logic using js classes and promises, and place in separate file
-* Fix/add error handling
-* Add ability for user to select desired currency from drop-down menu
-* Add styling
+* Allow for conversion both to and from USD
+* Cache API results and use session storage for new conversions
+* UI improvements:
+    * Allow user selection to persist after form submission
+    * Shorten converted amounts to two decimals
+    * Use the symbol for the converted currency
+    * Add comma separators to results to make large numbers easier to read. Or, convert larger number into millions, billions, or both (e.g., “$1,000 is equal to ₩1.2 million”)
+* Additional design and styling improvements
 
 ## License
 ---
