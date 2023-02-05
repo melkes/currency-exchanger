@@ -14,10 +14,18 @@
 
 ## Setup/Installation Requirements
 
+### Get an API key:
+* Visit [https://www.exchangerate-api.com] and enter an email address, then choose a new password to finish registration and create your API key.
+* After you are signed in with an email address and password, your API key is available at [https://app.exchangerate-api.com/dashboard].
+
+### Run the program
 * Clone this repository
-* Navigate to the directory in a terminal window, run:
+* Navigate to its directory in a terminal window, and run:
   * `npm install`
-  * `npm run build`
+* Create a new `.env ` file in the project directory by entering `touch .env` in the terminal.
+* Open the `.env` file and paste in `API_KEY=YOUR-API-KEY`, replacing `YOUR-API-KEY` with your actual API key, and save.
+* In the terminal enter
+  * `npm run build`, then
   * `npm run start`
 
 ## Potential improvements/roadmap
