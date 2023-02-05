@@ -15,8 +15,8 @@
 ## Setup/Installation Requirements
 
 ### Get an API key:
-* Visit [https://www.exchangerate-api.com] and enter an email address, then choose a new password to finish registration and create your API key.
-* After you are signed in with an email address and password, your API key is available at [https://app.exchangerate-api.com/dashboard].
+* Visit https://www.exchangerate-api.com and enter an email address, then choose a new password to finish registration and create your API key.
+* After you are signed in with an email address and password, your API key is available at https://app.exchangerate-api.com/dashboard.
 
 ### Run the program
 * Clone this repository
