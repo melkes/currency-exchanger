@@ -2,6 +2,7 @@
 
 ### By Mike Wilkes
 #### An application to convert currency pairs using the [ExchangeRate API](https://www.exchangerate-api.com/)
+View on [Github Pages](https://melkes.github.io/currency-exchanger/).
 ---
 ## Technologies Used
 * Git
@@ -39,7 +40,7 @@
 * Cache API results and use session storage for new conversions
 
 ## License
----
+
 MIT License
 
 Copyright (c) _2023_ _Mike Wilkes_ 
